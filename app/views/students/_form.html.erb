@@ -1,0 +1,110 @@
+<% form_for @student do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :birth_date %><br />
+    <%= f.date_select :birth_date %>
+  </p>
+
+  <p>
+    <%= f.label :gender %><br />
+    <%= f.select :gender, ["M", "F"] %>
+  </p>
+
+  <p>
+    <%= f.label :birth_country_code %><br />
+    <%= f.text_field :birth_country_code %>
+  </p>
+
+  <p>
+    <%= f.label :citizenship_country_code %><br />
+    <%= f.text_field :citizenship_country_code %>
+  </p>
+
+  <p>
+    <%= f.label :visa_type %><br />
+    <%= f.text_field :visa_type %>
+  </p>
+
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= f.label :issue_reason %><br />
+    <%= f.text_field :issue_reason %>
+  </p>
+
+  <p>
+    <%= f.label :foreign_address1 %><br />
+    <%= f.text_field :foreign_address1 %>
+  </p>
+
+  <p>
+    <%= f.label :foreign_сountry_сode %><br />
+    <%= f.text_field :foreign_сountry_сode %>
+  </p>
+
+  <p>
+    <%= f.label :edu_primary_major %><br />
+    <%= f.text_field :edu_primary_major %>
+  </p>
+
+  <p>
+    <%= f.label :edu_length_of_study %><br />
+    <%= f.text_field :edu_length_of_study %>
+  </p>
+
+  <p>
+    <%= f.label :edu_prg_start_date %><br />
+    <%= f.date_select :edu_prg_start_date %>
+  </p>
+
+  <p>
+    <%= f.label :edu_prg_end_date %><br />
+    <%= f.date_select :edu_prg_end_date %>
+  </p>
+
+  <p>
+    <%= f.label :edu_edu_level %><br />
+    <%= f.text_field :edu_edu_level %>
+  </p>
+
+  <p>
+    <%= f.label :edu_eng_proficiency_eng_required %><br />
+    <%= f.text_field :edu_eng_proficiency_eng_required %>
+  </p>
+
+  <p>
+    <%= f.label :edu_eng_proficiency_requirements_met %><br />
+    <%= f.text_field :edu_eng_proficiency_requirements_met %>
+  </p>
+
+  <p>
+    <%= f.label :fin_academic_term %><br />
+    <%= f.text_field :fin_academic_term %>
+  </p>
+
+  <p>
+    <%= f.label :fin_funding_personal %><br />
+    <%= f.text_field :fin_funding_personal %>
+  </p>
+
+  <p>
+    <%= f.label :fin_expense_tuition %><br />
+    <%= f.text_field :fin_expense_tuition %>
+  </p>
+
+  <p>
+    <%= f.label :fin_expense_living_expense %><br />
+    <%= f.text_field :fin_expense_living_expense %>
+  </p>
+
+  <p><%= f.submit %></p>
+<% end %>
