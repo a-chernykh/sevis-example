@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "rails", "2.3.8"
 gem "i18n"
-gem "sevis", :git => "git@github.com:turingstudio/sevis.git"
+# gem "sevis", :git => "git@github.com:turingstudio/sevis.git", :branch => "active_record"
 gem "sqlite3-ruby"
 gem "nifty-generators"
 
