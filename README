@@ -2,3 +2,31 @@ Put this files into root dir:
 
 cacert.pem
 comodo-turing-itu-test-pass-is-itudev.pem
+
+Example:
+
+	Student.create({
+		:batch_id                               => "12345678901234",
+		:org_id                                 => "LOS214F05211000",
+		:user_id                                => "tturin3363",
+		:print_form                             => true,
+		:issue_reason                           => "I",
+		:personal_info_last_name                => "Chernih",
+		:personal_info_birth_date               => "1985-11-11",
+		:personal_info_gender                   => "M",
+		:personal_info_birth_country_code       => "RS",
+		:personal_info_citizenship_country_code => "RS",
+		:personal_info_visa_type                => "01",
+		:foreign_address_address1               => "Gavrilova 6-132",
+		:foreign_address_country_code           => "RS",
+		:educational_level_level_level          => "01",
+		:educational_level_primary_major        => "01.0101",
+		:educational_level_length_of_study      => "12",
+		:educational_level_prg_start_date       => "2010-10-25",
+		:educational_level_prg_end_date         => "2011-10-25",
+		:educational_level_eng_eng_required     => false,
+		:financial_info_academic_term           => "06",
+		:financial_info_expense_tuition         => 3000,
+		:financial_info_expense_living_expense  => 3000,
+		:financial_info_funding_personal        => 10000,
+	})
